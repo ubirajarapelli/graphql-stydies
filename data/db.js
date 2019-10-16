@@ -1,6 +1,11 @@
+let id = 1
+function setNextId() {
+  return id++
+}
+
 const arrUsuarios = [
   {
-    id: 1,
+    id: setNextId(),
     nome: 'João Silva',
     email: 'jsilva@wemail.com',
     idade: 29,
@@ -8,7 +13,7 @@ const arrUsuarios = [
     status: 'ATIVO'
   },
   {
-    id: 2,
+    id: setNextId(),
     nome: 'Rafael Junior',
     email: 'rafajunior@wemail.com',
     idade: 31,
@@ -16,7 +21,7 @@ const arrUsuarios = [
     status: 'INATIVO'
   },
   {
-    id: 3,
+    id: setNextId(),
     nome: 'Daniela Smith',
     email: 'danismithwemail.com',
     idade: 24,
@@ -31,4 +36,8 @@ const arrPerfil = [
   { id: 2, nome: 'Commun' }
 ]
 
-module.exports = { arrUsuarios, arrPerfil }
+module.exports = {
+  arrUsuarios,
+  arrPerfil,
+  setNextId
+}
