@@ -25,7 +25,6 @@ module.exports = {
     }
   },
   numerosMegaSena() {
-    // return [4, 8, 13, 27, 33, 54]
     const crescente = (a, b) => a - b
     return Array(6)
       .fill(0).map(() => parseInt(Math.random() * 60 +1))
