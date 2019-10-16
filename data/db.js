@@ -26,18 +26,9 @@ const arrUsuarios = [
 ]
 
 const arrPerfil = [
-  {
-    id: 0,
-    nome: 'Owner'
-  },
-  {
-    id: 1,
-    nome: 'Administrador'
-  },
-  {
-    id: 2,
-    nome: 'Commun'
-  }
+  { id: 0, nome: 'Owner' },
+  { id: 1, nome: 'Administrador' },
+  { id: 2, nome: 'Commun' }
 ]
 
 module.exports = { arrUsuarios, arrPerfil }
